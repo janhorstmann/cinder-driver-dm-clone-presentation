@@ -8,7 +8,7 @@
 * Return local connector if connector indicates connection from same host as volume
 * Transfer volume to destination and return a local connector
 
-```mermaid
+<pre class="mermaid">
 sequenceDiagram
   box volume host
   participant a as cinder-volume
@@ -42,8 +42,16 @@ sequenceDiagram
     a->>db: switch volume name_id,<br/> attributes, attachments
   end
   a->>-a: return local connector
-```
+</pre>
 
 ---
 
 [prev](005-driver-concept.md) [TOC](000-toc.md) [next](007-driver-concept-term-conn.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>

@@ -1,6 +1,6 @@
 # Device-mapper clone target
 
-```mermaid
+<pre class="mermaid">
 block-beta
 columns 3
 block:src_node["node 1\n\n\n\n\n\n\n\n"]:1
@@ -29,7 +29,7 @@ classDef remote stroke-dasharray: 5 5;
 classDef node fill:#ffdead;
 class src remote
 class src_nodel, dst_node node
-```
+</pre>
 
 * multi-attachment for live-migration?
 * failure modes
@@ -43,3 +43,11 @@ class src_nodel, dst_node node
 ---
 
 [prev](002-cloud-architecture) [TOC](000-toc.md) [next](004-dm-clone-2.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>

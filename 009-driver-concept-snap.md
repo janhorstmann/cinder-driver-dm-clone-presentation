@@ -5,7 +5,7 @@
 > [!NOTE]
 > Snapshot support **not** yet implemented in PoC! Concept tested manually
 
-```mermaid
+<pre class="mermaid">
 block-beta
 columns 3
 block:src_node:1
@@ -51,8 +51,16 @@ classDef remote stroke-dasharray: 5 5;
 classDef node fill:#ffdead;
 class src,snap_cow remote
 class src_node, dst_node node
-```
+</pre>
 
 ---
 
 [prev](008-driver-concept-unsolved.md) [TOC](000-toc.md) [next](010-driver-concept-snap-2.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>

@@ -1,6 +1,6 @@
 # Replacing dm-clone with dm-linear
 
-```mermaid
+<pre class="mermaid">
 block-beta
 columns 3
 block:src_node["node 1\n\n\n\n\n\n\n\n"]:1
@@ -26,8 +26,16 @@ classDef remote stroke-dasharray: 5 5;
 classDef node fill:#ffdead;
 class src remote
 class src_nodel, dst_node node
-```
+</pre>
 
 ---
 
 [prev](003-dm-clone.md) [TOC](000-toc.md) [next](005-driver-concept.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>

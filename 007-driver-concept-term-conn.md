@@ -7,7 +7,7 @@
 * Failed instance live-migrations require clean up of created volume and clone target
 * Successful instance live-migrations require enabling hydration on destination volume
 
-```mermaid
+<pre class="mermaid">
 sequenceDiagram
   box volume host
   participant a as cinder-volume
@@ -33,8 +33,16 @@ sequenceDiagram
       a->>-a: enable hydration
     end
   end
-```
+</pre>
 
 ---
 
 [prev](006-driver-concept-init-conn.md) [TOC](000-toc.md) [next](008-driver-concept-unsolved.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>

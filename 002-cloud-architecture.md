@@ -1,6 +1,6 @@
 # OpenStack cloud architecture for local storage in cinder
 
-```mermaid
+<pre class="mermaid">
 block-beta
 columns 2
 block:node1["node 1"]:1
@@ -26,7 +26,7 @@ classDef remote stroke-dasharray: 5 5;
 classDef node fill:#ffdead;
 class b5 remote
 class node1, node2 node
-```
+</pre>
 
 * `cinder-volume` service on every hypervisor
   * security: DB credentials on every hypervisor
@@ -35,3 +35,11 @@ class node1, node2 node
 ---
 
 [prev](001-motivation.md) [TOC](000-toc.md) [next](003-dm-clone.md)
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'default'
+	});
+</script>
